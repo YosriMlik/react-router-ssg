@@ -1,9 +1,6 @@
 import type { Config } from "@react-router/dev/config";
 
 export default {
-  // Enable static site generation
-  ssr: true,
-  async prerender() {
-    return ["/", "/about", "/services", "/contact"];
-  },
+  // Disable SSR for true static site generation
+  ssr: false,
 } satisfies Config;
